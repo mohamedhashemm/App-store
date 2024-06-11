@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Admin;
 use App\Models\Category;
 use App\Models\Product;
 use App\Models\store;
@@ -18,9 +19,11 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // \App\Models\User::factory(10)->create();
-        store::factory(10)->create();
-        Category::factory(25)->create();
+        // store::factory(10)->create();
+        // Category::factory(25)->create();
         
-        Product::factory(80)->create();
+        // Product::factory(80)->create();
+
+        Admin::factory(20)->create();
     }
 }
